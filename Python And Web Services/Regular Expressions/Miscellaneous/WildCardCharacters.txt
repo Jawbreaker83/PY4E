@@ -1,0 +1,22 @@
+The dot character matches any character
+If you add the asterisk character, the character is 'any number of times'
+
+e.g.
+
+x-Sieve: CMU Sieve 2.3
+
+X-DSPAM-Result: Innocent
+
+X-DSPAM-Confidence: 0.8475
+
+X-Content-Type-Message-Body: text/plain
+
+"^X.*:""
+This expression below says that, starting from the beginning of a line, I am looking for lines that have a capital X at the beginning followed by any number of characters followed by a colon '':''
+Will match up with lines that start with x followed by some number of characters followed by a colon
+Each of the lines above with produce a true \ match.
+
+A fine tuned variation of the expression above could be
+
+^X-\S+: --> 
+Looking for matches that start with an X, followed by a dache, followed by any non-whitespace characters, followed by a greater than or equal to non-blank character follwed by a colon.
