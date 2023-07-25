@@ -6,7 +6,7 @@ import json
 sample_json_data = 'http://py4e-data.dr-chuck.net/comments_42.json'
 actual_json_data = 'http://py4e-data.dr-chuck.net/comments_1831419.json'
 
-urldata = urllib.request.urlopen(actual_json_data).read()
+urldata = urllib.request.urlopen(sample_json_data).read()
 data = json.loads(urldata)
 
 total = 0
