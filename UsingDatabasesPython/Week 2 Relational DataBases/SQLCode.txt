@@ -1,0 +1,11 @@
+1.  INSERT INTO Users (name,email) VALUES('Kristin','kf@umich.edu') ==> SQL Insert Function
+
+2.  DELETE FROM Users WHERE email='ted@umich.edu'  ==> SQL Delete Function.
+
+3.  UPDATE Users SET name = 'Charles' WHERE email='csev@umich.edu'  ==> SQL Update Function
+
+4.  SELECT*FROM Users WHERE email='csev@umich.edu'  ==> SQL Record Retrieval Function
+
+5.  SELECT*FROM Users ORDER BY email ==> Sorting \ Ordering
+
+6.  SELECT*FROM Users ORDER BY name ==> Sorting \ Ordering
