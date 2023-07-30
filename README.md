@@ -1,1 +1,1 @@
-# PY4E
+This repository contains all of the code distributed and written as part of the Cousera Python For Everybody Specialization.
