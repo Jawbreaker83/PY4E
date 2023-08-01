@@ -30,7 +30,6 @@ CREATE TABLE Track (
 );
 ''')
 
-
 fname = input('Enter file name: ')
 if ( len(fname) < 1 ) : fname = 'Library.xml'
 
@@ -79,3 +78,25 @@ for entry in all:
         ( name, album_id, length, rating, count ) )
 
     conn.commit()
+
+#############################################################################################################################################################
+
+#  This Python script reads an iTunes Library XML file and populates a SQLite database with the information about artists, albums, and tracks from the library.
+
+#  1.  It connects to a SQLite database named 'trackdb.sqlite' and creates three tables: Artist, Album, and Track. These tables are used to store information 
+#      about artists, albums, and tracks, respectively.
+ 
+#  2.  It prompts the user to enter the name of the iTunes Library XML file. If no filename is provided, it defaults to 'Library.xml'.
+
+#  3.  The script then parses the XML file using ElementTree and finds all the 'dict' elements nested within 'dict' elements. These 'dict' elements 
+#      represent individual tracks in the iTunes library.
+
+#  4.  It iterates through each track entry and extracts relevant information such as track name, artist name, album title, play count, rating, and track length.
+
+#  5.  The script then inserts the extracted data into the corresponding tables in the SQLite database. Before inserting the data, it checks if the artist 
+#      and album already exist in their respective tables. If not, it inserts them, and if they already exist, it retrieves their IDs.
+
+#  6.  The Track information is inserted into the Track table, and if a track with the same title already exists in the table, it is replaced with the new 
+#      track information.
+
+#  7.  Finally, the changes are committed to the database.
