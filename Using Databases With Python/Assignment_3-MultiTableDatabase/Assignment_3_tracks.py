@@ -81,7 +81,7 @@ def lookup(d, key):
             found = True
     return None
 ########################################################################################################################################################
-#  This part of the script uses the XML data parsed from the iTunes Library XML file to extract track information and insert it into the SQLite database 
+#  This part of the script below uses the XML data parsed from the iTunes Library XML file to extract track information and insert it into the SQLite database 
 #  tables that were previously created. Let's go through it step by step:
 
 #  1.  stuff = ET.parse(fname): This line parses the XML file with the filename provided earlier (fname) or defaults to 'Library.xml'. The parsed XML data 
