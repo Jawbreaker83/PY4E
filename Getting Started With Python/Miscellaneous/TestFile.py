@@ -1,5 +1,7 @@
-n = 0
-while n > 0 :
-    print('Lather')
-    print('Rinse')
-print('Dry off!')
+<person>
+    <name>Chuck</name>
+    <phone type ='intl'>
+    +1 734 303 4456
+    </phone>
+    <email hid ='yes'/>
+</person>
